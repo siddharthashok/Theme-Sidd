@@ -105,6 +105,11 @@ add_action( 'widgets_init', 'sidd_widgets_init' );
  * Enqueue scripts and styles.
  */
 function sidd_scripts() {
+
+	wp_deregister_script( 'jquery' );
+
+	wp_enqueue_script( 'sidd-jquery', get_template_directory_uri() . '/js/vendor/jquery.js', array(), '20151215', true );
+
 	wp_enqueue_style( 'sidd-style', get_stylesheet_uri() );
 
 	wp_enqueue_script( 'sidd-navigation', get_template_directory_uri() . '/js/navigation.js', array(), '20151215', true );

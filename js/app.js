@@ -35,6 +35,45 @@ $(document).ready(function(){
 
   }
 
+
+  $('.masonry').masonry({
+    // options
+    itemSelector: '.columns',
+    columnWidth: '.columns'
+  });
+
+
+// Initialise Foundation
   $(document).foundation();
+
+// Ajax load lost with REST API
+
+  function loadContent(postID){
+
+    var $modal = $('#post-model');
+
+    $.ajax({
+       type: 'GET',
+       url: 'http://gby05.review/s-theme-wp/wp-json/wp/v2/posts/' + postID,
+       dataType: 'json',
+       success: function(data){
+       // do something with the data here
+       post_data = data;
+        console.log(post_data.title.rendered);
+
+        $modal.find('.post-content').html(post_data.content.rendered);
+       }
+      });
+    console.log(postID);
+  }
+
+  $('.load-modal').on('click', function(e) {
+    e.preventDefault();
+    var ajax_postId = $(this).data("post-id");
+    loadContent(ajax_postId);
+  });
+
+
+
 
 });

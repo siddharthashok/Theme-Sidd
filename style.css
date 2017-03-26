@@ -47,6 +47,13 @@ h2 {
   font-size: 36px;
   letter-spacing: 1.4px; }
 
+h3 {
+  font-family: "Source Sans Pro", sans-serif;
+  font-size: 24px;
+  letter-spacing: 1px;
+  line-height: normal;
+  margin-bottom: 10px; }
+
 a {
   color: #F6F3EB;
   border-bottom: 2px solid #5e6fad; }
@@ -349,11 +356,21 @@ svg.bottomone {
     float: right;
     background-position: right 30px center; }
 
-#blog {
-  width: 100%;
-  height: 500px;
-  background-color: #605671;
-  position: relative; }
+#blog .posts-wrap .post {
+  border: 2px solid rgba(246, 243, 235, 0.2);
+  padding: 20px;
+  margin-bottom: 20px; }
+  #blog .posts-wrap .post p {
+    font-size: 18px;
+    line-height: 28px;
+    letter-spacing: 0.38px;
+    margin: 0px; }
+
+#blog .posts-wrap .column:last-child:not(:first-child), #blog .posts-wrap .columns:last-child:not(:first-child) {
+  float: left; }
+
+.full.reveal h1, .full.reveal h2, .full.reveal h3, .full.reveal h4, .full.reveal h5, .full.reveal p {
+  color: #384D9D; }
 
 @media screen and (max-width: 64em) {
   .column, .columns {
