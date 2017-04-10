@@ -37,3 +37,12 @@ function sidd_pingback_header() {
 	}
 }
 add_action( 'wp_head', 'sidd_pingback_header' );
+
+/**
+* Change [...] to ... in excerpt more
+*/
+
+function new_excerpt_more( $more ) {
+    return '...';
+}
+add_filter('excerpt_more', 'new_excerpt_more');

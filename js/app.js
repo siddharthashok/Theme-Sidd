@@ -53,15 +53,24 @@ $(document).ready(function(){
     var $modal = $('#post-model');
 
     $.ajax({
-       type: 'GET',
-       url: 'http://gby05.review/s-theme-wp/wp-json/wp/v2/posts/' + postID,
-       dataType: 'json',
-       success: function(data){
-       // do something with the data here
-       post_data = data;
-        console.log(post_data.title.rendered);
+         type: 'GET',
+         url: siteUrl + '/wp-json/wp/v2/posts/' + postID,
+         dataType: 'json',
+         success: function(data){
 
-        $modal.find('.post-content').html(post_data.content.rendered);
+         post_data = data;
+        console.log(post_data);
+
+        var PostTitle = post_data.title.rendered;
+        var PostContent = post_data.content.rendered;
+        var PostLink = post_data.link;
+
+        console.log(PostTitle);
+
+        $modal.find('.post-title').html(PostTitle);
+        $modal.find('.post-content').html(PostContent);
+
+        window.history.pushState('post', PostTitle, PostLink);
        }
       });
     console.log(postID);
@@ -73,7 +82,11 @@ $(document).ready(function(){
     loadContent(ajax_postId);
   });
 
+$('.close-button').on('click', function(e) {
+  window.history.pushState('post', siteTitle, siteUrl);
 
+
+});
 
 
 });
