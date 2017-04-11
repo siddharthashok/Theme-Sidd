@@ -12,8 +12,10 @@
  * @package Sidd
  */
 
-get_header(); ?>
+get_header();
 
+if ( is_home() ) {
+?>
 <section id="about">
 	<div class="header_wrap">
 		<div class="row">
@@ -33,13 +35,12 @@ get_header(); ?>
 				<p>I believe in staying curious, learning constantly, and never giving up. I enjoy creating performant interfaces and working on challenging projects.</p>
 
 				<p>Born in Varanasi, I now live in the land of sun and sea - Goa. You can follow my story on <a href="https://www.instagram.com/siddharthashok/" target="_blank">Instagram</a>, <a href="https://twitter.com/siddharthashok" target="_blank">tweet me</a> or simply mail me at <a href="mailto:hello@sidd.in">hello@sidd.in</a>.</p>
-
 			</div>
-
-
 		</div>
 	</div>
 </section>
+
+<?php } ?>
 
 <section id="blog">
 	<div class="row">

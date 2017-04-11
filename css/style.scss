@@ -33,6 +33,9 @@ $white_d: #F2F2F2;
 $blue: #384D9D;
 $white: #F6F3EB;
 
+$popup_back: #f3f1ed;
+$popup_text: #403D34;
+
 // Mixins
 @mixin transition($transition) {
     -moz-transition:    $transition;
@@ -214,8 +217,8 @@ svg.bottomone {bottom: -150px; margin-top: -150px;}
   }
 }
 
-.full.reveal {
-  h1, h2, h3, h4, h5, p {color: $blue;}
+.full.reveal { background: $popup_back;
+  h1, h2, h3, h4, h5, p, ul li {color: $popup_text;}
 }
 
 // Responsive
