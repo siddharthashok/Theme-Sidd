@@ -217,6 +217,10 @@ svg.bottomone {bottom: -150px; margin-top: -150px;}
   }
 }
 
+.posts-navigation {
+  h2 {display: none;}
+}
+
 .full.reveal { background: $popup_back;
   h1, h2, h3, h4, h5, p, ul li {color: $popup_text;}
 }

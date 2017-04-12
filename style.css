@@ -369,6 +369,9 @@ svg.bottomone {
 #blog .posts-wrap .column:last-child:not(:first-child), #blog .posts-wrap .columns:last-child:not(:first-child) {
   float: left; }
 
+.posts-navigation h2 {
+  display: none; }
+
 .full.reveal {
   background: #f3f1ed; }
   .full.reveal h1, .full.reveal h2, .full.reveal h3, .full.reveal h4, .full.reveal h5, .full.reveal p, .full.reveal ul li {
