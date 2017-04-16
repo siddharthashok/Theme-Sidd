@@ -69,16 +69,6 @@
 		"oF": 0,
 		"oS": 0
 		},
-	"\/css\/style.css": {
-		"aP": 1,
-		"bl": 0,
-		"ft": 16,
-		"ma": 0,
-		"oA": 0,
-		"oAP": "\/css\/style-min.css",
-		"oF": 0,
-		"oS": 0
-		},
 	"\/css\/style.scss": {
 		"aP": 0,
 		"bl": 0,
@@ -131,6 +121,16 @@
 		"miP": 0,
 		"oA": 2,
 		"oAP": "\/img\/arrow-right.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 3758088159,
+		"prP": 0
+		},
+	"\/img\/comment.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "\/img\/comment.svg",
 		"oF": 0,
 		"opt": 0,
 		"plM": 3758088159,

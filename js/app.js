@@ -69,6 +69,7 @@ $(document).ready(function(){
 
         $modal.find('.post-title').html(PostTitle);
         $modal.find('.post-content').html(PostContent);
+        $modal.find('.post-link').attr("href", PostLink)
 
         window.history.pushState('post', PostTitle, PostLink);
        }

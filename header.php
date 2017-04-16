@@ -31,7 +31,7 @@
 
 
   <?php
-  if ( is_home() ) {
+  if ( is_front_page() && !is_paged() ) {
   ?>
   <section id="about">
   	<div class="header_wrap">

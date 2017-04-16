@@ -376,6 +376,20 @@ svg.bottomone {
   background: #f3f1ed; }
   .full.reveal h1, .full.reveal h2, .full.reveal h3, .full.reveal h4, .full.reveal h5, .full.reveal p, .full.reveal ul li {
     color: #403D34; }
+  .full.reveal a {
+    color: #403D34; }
+  .full.reveal .post-link {
+    position: absolute;
+    right: 15px;
+    bottom: 15px;
+    width: auto;
+    border: 2px solid transparent; }
+    .full.reveal .post-link img {
+      width: 25px;
+      margin-right: 10px; }
+    .full.reveal .post-link:hover {
+      background: transparent;
+      border-bottom: 2px solid #403D34; }
 
 @media screen and (max-width: 64em) {
   .column, .columns {

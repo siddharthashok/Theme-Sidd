@@ -223,6 +223,11 @@ svg.bottomone {bottom: -150px; margin-top: -150px;}
 
 .full.reveal { background: $popup_back;
   h1, h2, h3, h4, h5, p, ul li {color: $popup_text;}
+  a {color: $popup_text;}
+  .post-link {    position: absolute; right: 15px; bottom: 15px; width: auto; border: 2px solid transparent;
+    img {width: 25px; margin-right: 10px;}
+    &:hover {background: transparent; border-bottom: 2px solid $popup_text; }
+  }
 }
 
 // Responsive
