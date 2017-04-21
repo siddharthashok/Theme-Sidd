@@ -57,4 +57,25 @@
   	</div>
   </section>
 
-  <?php } else {echo "not home";} ?>
+  <?php } else {?>
+
+    <header>
+    		<div class="row">
+    			<div class="medium-12 columns">
+            <div class="left">
+              <a href="<?php echo site_url(); ?>">
+        				<div class="image-logo-wrap"></div>
+        				<h1 class="sidd">Siddharth<br>Ashok</h1>
+              </a>
+            </div>
+            <div class="right">
+              <nav id="site-navigation" class="main-navigation" role="navigation">
+                <?php wp_nav_menu( array( 'theme_location' => 'menu-1', 'menu_id' => 'primary-menu' ) ); ?>
+              </nav><!-- #site-navigation -->
+            </div>
+    			</div>
+    		</div>
+    </header>
+
+
+  <?php } ?>

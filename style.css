@@ -32,6 +32,9 @@ body {
   background: #384D9D;
   color: #F6F3EB; }
 
+body.single-post {
+  color: #403D34; }
+
 h1, h2, h3, h4, h5 {
   font-family: "Source Serif Pro", serif;
   font-weight: 700;
@@ -210,6 +213,101 @@ a {
     -webkit-transition: all 0.5s ease;
     transition: all 0.5s ease; }
 
+header .image-logo-wrap {
+  width: 60px;
+  height: 60px;
+  float: left; }
+  header .image-logo-wrap:after {
+    top: 5px;
+    left: -5px; }
+  header .image-logo-wrap:before {
+    top: -5px;
+    left: 5px; }
+  header .image-logo-wrap:hover:after {
+    left: 5px;
+    top: -5px; }
+  header .image-logo-wrap:hover:before {
+    left: -5px;
+    top: 5px; }
+
+header:hover .image-logo-wrap:after {
+  left: 5px;
+  top: -5px; }
+
+header:hover .image-logo-wrap:before {
+  left: -5px;
+  top: 5px; }
+
+header h1.sidd {
+  background: none;
+  color: #F6F3EB;
+  margin-left: 20px;
+  margin-top: 29px;
+  float: left;
+  font-size: 21px;
+  line-height: 30px;
+  letter-spacing: 1px; }
+
+header nav {
+  margin-top: 36px; }
+
+.menu > li > a {
+  border: none; }
+
+#blog .posts-wrap .post {
+  border: 2px solid rgba(246, 243, 235, 0.2);
+  padding: 20px;
+  margin-bottom: 20px; }
+  #blog .posts-wrap .post p {
+    font-size: 18px;
+    line-height: 28px;
+    letter-spacing: 0.38px;
+    margin: 0px; }
+
+#blog .posts-wrap .column:last-child:not(:first-child), #blog .posts-wrap .columns:last-child:not(:first-child) {
+  float: left; }
+
+.posts-navigation h2 {
+  display: none; }
+
+.full.reveal, .single-post {
+  background: #f3f1ed; }
+  .full.reveal h1, .full.reveal h2, .full.reveal h3, .full.reveal h4, .full.reveal h5, .full.reveal p, .full.reveal ul li, .single-post h1, .single-post h2, .single-post h3, .single-post h4, .single-post h5, .single-post p, .single-post ul li {
+    color: #403D34; }
+  .full.reveal a, .single-post a {
+    color: #403D34;
+    border-color: #403D34; }
+    .full.reveal a:hover, .single-post a:hover {
+      background: #403D34;
+      color: #f3f1ed; }
+  .full.reveal .comment-link, .single-post .comment-link {
+    border: 2px solid transparent; }
+    .full.reveal .comment-link img, .single-post .comment-link img {
+      width: 25px;
+      margin-right: 10px; }
+    .full.reveal .comment-link:hover, .single-post .comment-link:hover {
+      background: transparent;
+      border-bottom: 2px solid #403D34; }
+  .full.reveal .image-logo-wrap:before, .full.reveal .image-logo-wrap:after, .single-post .image-logo-wrap:before, .single-post .image-logo-wrap:after {
+    border-color: #403D34; }
+  .full.reveal header h1.sidd, .single-post header h1.sidd {
+    color: #403D34; }
+  .full.reveal .entry-meta .posted-on, .single-post .entry-meta .posted-on {
+    text-align: center;
+    margin-bottom: 15px; }
+
+pre {
+  overflow: scroll; }
+
+figure {
+  max-width: 100%; }
+
+.center {
+  text-align: center; }
+
+.close-button {
+  position: fixed; }
+
 svg.slant {
   pointer-events: none;
   height: 150px;
@@ -355,41 +453,6 @@ svg.bottomone {
     background-image: url("../img/arrow-right.svg");
     float: right;
     background-position: right 30px center; }
-
-#blog .posts-wrap .post {
-  border: 2px solid rgba(246, 243, 235, 0.2);
-  padding: 20px;
-  margin-bottom: 20px; }
-  #blog .posts-wrap .post p {
-    font-size: 18px;
-    line-height: 28px;
-    letter-spacing: 0.38px;
-    margin: 0px; }
-
-#blog .posts-wrap .column:last-child:not(:first-child), #blog .posts-wrap .columns:last-child:not(:first-child) {
-  float: left; }
-
-.posts-navigation h2 {
-  display: none; }
-
-.full.reveal {
-  background: #f3f1ed; }
-  .full.reveal h1, .full.reveal h2, .full.reveal h3, .full.reveal h4, .full.reveal h5, .full.reveal p, .full.reveal ul li {
-    color: #403D34; }
-  .full.reveal a {
-    color: #403D34; }
-  .full.reveal .post-link {
-    position: absolute;
-    right: 15px;
-    bottom: 15px;
-    width: auto;
-    border: 2px solid transparent; }
-    .full.reveal .post-link img {
-      width: 25px;
-      margin-right: 10px; }
-    .full.reveal .post-link:hover {
-      background: transparent;
-      border-bottom: 2px solid #403D34; }
 
 @media screen and (max-width: 64em) {
   .column, .columns {

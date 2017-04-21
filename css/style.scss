@@ -50,8 +50,10 @@ $popup_text: #403D34;
 .column, .columns {padding-left: 10px; padding-right: 10px;}
 
 body {font-family: $font_normal; font-weight: normal; background: $blue; color: $white;}
+body.single-post {color: $popup_text;}
 
 // Typography
+
 h1,h2,h3,h4,h5 {font-family: $font_bold; font-weight: 700; color: $white;}
 
 p {font-size: 24px; letter-spacing: 0.5px; line-height: 40px; margin-bottom: 40px;}
@@ -62,20 +64,22 @@ h3 {font-family: $font_normal; font-size: 24px; letter-spacing: 1px; line-height
 
 a {color: $white; border-bottom: 2px solid rgb(94, 111, 173);
   &:hover, &:focus {
-    // color: #97aaf7;
     background:rgb(94, 111, 173); color: #ffffff;
   }
 }
-
-.bold {font-family: $font_bold; font-weight: 600; }
+.bold {font-family: $font_bold; font-weight: 600;}
 
 .special, .main_article h2 {font-family: $font_bold; font-weight: 600; font-size: 36px; line-height: 72px; letter-spacing: 1px; border-bottom: 1px solid rgba(96, 86, 113, 0.2); display: inline; padding-bottom: 5px;
 	&:after {content:''; position: relative; width: 100%; height: 20px; display: block;}
-	}
+}
+
+// Article Styles
 
 .main_article {padding-top: 60px; margin-bottom: 80px;}
 
 #about { padding-top: 100px; padding-bottom: 100px;}
+
+// Sidd Logo
 
 .image-logo-wrap { width: 250px; height: 250px; position: relative; float: none; margin-left: 20px; margin-bottom: 60px; margin-top: 27px;
   img {width:100%; position:relative; z-index:1;}
@@ -93,7 +97,6 @@ a {color: $white; border-bottom: 2px solid rgb(94, 111, 173);
   span {color: $blue; background: $white; display: inline; padding: 0px 40px 0px 10px; box-decoration-break: clone; -webkit-box-decoration-break: clone;}
 }
 
-// Siddharth logo
 .sid_logo_link {
 	span{color: #605671;}
 }
@@ -106,6 +109,73 @@ a {color: $white; border-bottom: 2px solid rgb(94, 111, 173);
 		&:after {top: -15px; right: -15px; @include transition(all 0.5s ease);}
 	}
 }
+
+
+// Header styles
+
+header {
+  .image-logo-wrap {width: 60px; height: 60px; float: left;
+    &:after {top:5px; left:-5px;}
+    &:before {top:-5px; left:5px;}
+    &:hover {
+      &:after {left:5px; top:-5px;}
+      &:before {left:-5px; top:5px;}
+    }
+  }
+  &:hover {
+    .image-logo-wrap{
+      &:after {left:5px; top:-5px;}
+      &:before {left:-5px; top:5px;}
+    }
+  }
+  h1.sidd {background: none; color: #F6F3EB; margin-left: 20px; margin-top: 29px; float: left; font-size: 21px; line-height: 30px; letter-spacing: 1px;}
+  nav {margin-top: 36px;}
+}
+
+// Menu
+
+.menu>li>a {border: none;}
+
+// Blog archive
+
+#blog {
+  .posts-wrap {
+    .post {border: 2px solid rgba(246, 243, 235, 0.2); padding: 20px; margin-bottom: 20px;
+      p {font-size: 18px; line-height: 28px; letter-spacing: 0.38px; margin: 0px;}
+    }
+    .column:last-child:not(:first-child), .columns:last-child:not(:first-child) {float: left;}
+  }
+}
+
+.posts-navigation {
+  h2 {display: none;}
+}
+
+// Single Post & Single post on revealmodel box
+
+.full.reveal, .single-post { background: $popup_back;
+  h1, h2, h3, h4, h5, p, ul li {color: $popup_text;}
+  a {color: $popup_text; border-color: $popup_text;
+    &:hover {background: $popup_text; color: $popup_back;}
+  }
+  .comment-link { border: 2px solid transparent;
+    img {width: 25px; margin-right: 10px;}
+    &:hover {background: transparent; border-bottom: 2px solid $popup_text; }
+  }
+  .image-logo-wrap:before, .image-logo-wrap:after {border-color: $popup_text;}
+  header h1.sidd {color: $popup_text;}
+  .entry-meta .posted-on  {text-align: center; margin-bottom: 15px;}
+}
+
+// Other
+
+pre {overflow: scroll;}
+figure {max-width: 100%;}
+.center {text-align: center;}
+
+.close-button {position: fixed;}
+
+
 
 // SVG Slant effect
 svg.slant { pointer-events: none; height: 150px; z-index: 9998; position: relative; padding-top: 5px;}
@@ -126,7 +196,10 @@ svg.bottomone {bottom: -150px; margin-top: -150px;}
 	// &:after {content: ""; position: absolute; top:0px; left: 0px; background: rgba(96, 86, 113, 0.6); height: 100%; width: 100%;}
 }
 
-//Instagram
+
+
+// Poloriad Instagram
+
 #instagram {width: 100%; background: $white_d; padding-bottom: 60px;
 	.instagram-carousel {
 		.image-wrap {padding: 15px 15px 30px 15px; background: #ffffff; position: relative; border-radius: 2px;
@@ -146,7 +219,7 @@ svg.bottomone {bottom: -150px; margin-top: -150px;}
 	border-radius: 2px;
 }
 
-		/* Rotate all even images 2 degrees */
+  /* Rotate all even images 2 degrees */
 .owl-item:nth-child(even) {
   -webkit-transform: rotate(2deg);
   -moz-transform: rotate(2deg);
@@ -195,39 +268,12 @@ svg.bottomone {bottom: -150px; margin-top: -150px;}
 
 }
 
-
-
-
-
-	}
+}
 
 .owl-carousel .owl-controls .owl-nav .owl-prev, .owl-carousel .owl-controls .owl-nav .owl-next {width: 50%; display: block; background-size: 40px auto; background-repeat: no-repeat; height: 60px; color: transparent; background-color: $white_d;}
 .owl-carousel .owl-controls .owl-nav .owl-prev {background-image:url("../img/arrow-left.svg"); float: left; background-position: left 30px center;}
 .owl-carousel .owl-controls .owl-nav .owl-next {background-image:url("../img/arrow-right.svg"); float: right; background-position: right 30px center;}
 
-
-}
-
-#blog {
-  .posts-wrap {
-    .post {border: 2px solid rgba(246, 243, 235, 0.2); padding: 20px; margin-bottom: 20px;
-      p {font-size: 18px; line-height: 28px; letter-spacing: 0.38px; margin: 0px;}
-    }
-    .column:last-child:not(:first-child), .columns:last-child:not(:first-child) {float: left;}
-  }
-}
-
-.posts-navigation {
-  h2 {display: none;}
-}
-
-.full.reveal { background: $popup_back;
-  h1, h2, h3, h4, h5, p, ul li {color: $popup_text;}
-  a {color: $popup_text;}
-  .post-link {    position: absolute; right: 15px; bottom: 15px; width: auto; border: 2px solid transparent;
-    img {width: 25px; margin-right: 10px;}
-    &:hover {background: transparent; border-bottom: 2px solid $popup_text; }
-  }
 }
 
 // Responsive

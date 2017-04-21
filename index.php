@@ -68,7 +68,7 @@ get_header();
 			<div class="post-content"></div>
 		</div>
 	</div>
-	<a href="" class="post-link"><img src="<?php echo get_template_directory_uri(); ?>/img/comment.svg" alt="">Comment</a>
+	<a href="" class="comment-link"><img src="<?php echo get_template_directory_uri(); ?>/img/comment.svg" alt="">Comment</a>
 	<button class="close-button" data-close aria-label="Close modal" type="button">
 		<span aria-hidden="true">&times;</span>
 	</button>
