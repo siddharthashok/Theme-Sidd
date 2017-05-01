@@ -48,46 +48,44 @@ $(document).ready(function(){
 
 // Ajax load lost with REST API
 
-  function loadContent(postID){
-
-    var $modal = $('#post-model');
-
-    $.ajax({
-         type: 'GET',
-         url: siteUrl + '/wp-json/wp/v2/posts/' + postID,
-         dataType: 'json',
-         success: function(data){
-
-         post_data = data;
-        console.log(post_data);
-
-        var PostTitle = post_data.title.rendered;
-        var PostContent = post_data.content.rendered;
-        var PostLink = post_data.link;
-
-        console.log(PostTitle);
-
-        $modal.find('.post-title').html(PostTitle);
-        $modal.find('.post-content').html(PostContent);
-        $modal.find('.comment-link').attr("href", PostLink)
-
-        window.history.pushState('post', PostTitle, PostLink);
-       }
-      });
-    console.log(postID);
-  }
-
-  $('.load-modal').on('click', function(e) {
-    e.preventDefault();
-    var ajax_postId = $(this).data("post-id");
-    loadContent(ajax_postId);
-  });
-
-$('.close-button').on('click', function(e) {
-  window.history.pushState('post', siteTitle, siteUrl);
-
-
-});
+  // function loadContent(postID){
+  //
+  //   var $modal = $('#post-model');
+  //
+  //   $.ajax({
+  //        type: 'GET',
+  //        url: siteUrl + '/wp-json/wp/v2/posts/' + postID,
+  //        dataType: 'json',
+  //        success: function(data){
+  //
+  //        post_data = data;
+  //       console.log(post_data);
+  //
+  //       var PostTitle = post_data.title.rendered;
+  //       var PostContent = post_data.content.rendered;
+  //       var PostLink = post_data.link;
+  //
+  //       console.log(PostTitle);
+  //
+  //       $modal.find('.post-title').html(PostTitle);
+  //       $modal.find('.post-content').html(PostContent);
+  //       $modal.find('.comment-link').attr("href", PostLink)
+  //
+  //       window.history.pushState('post', PostTitle, PostLink);
+  //      }
+  //     });
+  //   console.log(postID);
+  // }
+  //
+  // $('.load-modal').on('click', function(e) {
+  //   e.preventDefault();
+  //   var ajax_postId = $(this).data("post-id");
+  //   loadContent(ajax_postId);
+  // });
+  //
+  // $('.close-button').on('click', function(e) {
+  //   window.history.pushState('post', siteTitle, siteUrl);
+  // });
 
 
 });

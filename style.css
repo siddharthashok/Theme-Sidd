@@ -111,7 +111,7 @@ a {
     z-index: 11;
     width: 100%;
     height: 100%;
-    background: #F6F3EB;
+    background: #384D9D;
     opacity: 0.3;
     -moz-transition: all 0.5s ease;
     -o-transition: all 0.5s ease;
@@ -287,7 +287,7 @@ header nav {
       margin-right: 10px; }
     .full.reveal .comment-link:hover, .single-post .comment-link:hover {
       background: transparent;
-      border-bottom: 2px solid #403D34; }
+      color: #403D34; }
   .full.reveal .image-logo-wrap:before, .full.reveal .image-logo-wrap:after, .single-post .image-logo-wrap:before, .single-post .image-logo-wrap:after {
     border-color: #403D34; }
   .full.reveal header h1.sidd, .single-post header h1.sidd {

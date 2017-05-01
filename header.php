@@ -38,7 +38,7 @@
   		<div class="row">
   			<div class="medium-4 large-4 medium-push-8 large-push-8 columns">
   				<div class="image-logo-wrap">
-  					<img src="<?php echo get_template_directory_uri(); ?>/img/siddharthashok.jpg" alt="Siddharth Ashok"/>
+  					<img src="<?php echo get_template_directory_uri(); ?>/img/sidd.jpg" alt="Siddharth Ashok"/>
   					<div class="overlay"></div>
   				</div>
 
@@ -62,13 +62,13 @@
     <header>
     		<div class="row">
     			<div class="medium-12 columns">
-            <div class="left">
+            <div class="float-left">
               <a href="<?php echo site_url(); ?>">
         				<div class="image-logo-wrap"></div>
         				<h1 class="sidd">Siddharth<br>Ashok</h1>
               </a>
             </div>
-            <div class="right">
+            <div class="float-right">
               <nav id="site-navigation" class="main-navigation" role="navigation">
                 <?php wp_nav_menu( array( 'theme_location' => 'menu-1', 'menu_id' => 'primary-menu' ) ); ?>
               </nav><!-- #site-navigation -->

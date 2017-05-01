@@ -34,7 +34,8 @@ get_header();
 					while ( have_posts() ) : the_post(); ?>
 
 					<div class="large-6 columns">
-						<a data-open="post-model" data-post-id="<?php echo get_the_ID(); ?>" class="load-modal">
+						<!-- <a data-open="post-model" data-post-id="<?php echo get_the_ID(); ?>" class="load-modal"> -->
+						<a href="<?php the_permalink(); ?>">
 							<div class="post">
 								<h3 class="post-title"><?php the_title(); ?></h3>
 								<div class="excerpt">
@@ -60,19 +61,36 @@ get_header();
 
 </section>
 
+<section id="upcoming-events">
+	<div class="row">
+		<div class="large-12 columns">
+			<h2>Upcoming Events</h2>
 
-<div class="full reveal" id="post-model" data-reveal>
+			<div class="events">
+				<div class="event">
+					
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+</section>
+
+<!-- AJAX -->
+<!-- <div class="full reveal" id="post-model" data-reveal>
 	<div class="row">
 		<div class="columns large-12">
 			<h2 class="post-title"></h2>
 			<div class="post-content"></div>
+
+			<a href="" class="comment-link"><img src="<?php echo get_template_directory_uri(); ?>/img/comment.svg" alt="">Comment</a>
 		</div>
 	</div>
-	<a href="" class="comment-link"><img src="<?php echo get_template_directory_uri(); ?>/img/comment.svg" alt="">Comment</a>
 	<button class="close-button" data-close aria-label="Close modal" type="button">
 		<span aria-hidden="true">&times;</span>
 	</button>
-</div>
+</div> -->
 
 
 <?php
