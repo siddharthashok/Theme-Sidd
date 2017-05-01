@@ -158,9 +158,19 @@
 		},
 	"\/img\/sidd.jpg": {
 		"ft": 16384,
-		"iS": 37974,
+		"iS": 38991,
 		"oA": 0,
 		"oAP": "\/img\/sidd.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"\/img\/sidd2.jpg": {
+		"ft": 16384,
+		"iS": 37974,
+		"oA": 0,
+		"oAP": "\/img\/sidd2.jpg",
 		"oF": 0,
 		"oIPL": 0,
 		"opt": 0,
@@ -171,16 +181,6 @@
 		"iS": 44174,
 		"oA": 0,
 		"oAP": "\/img\/siddharthashok.jpg",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
-		"q": 100
-		},
-	"\/img\/siddharthashok_square.jpg": {
-		"ft": 16384,
-		"iS": 38991,
-		"oA": 0,
-		"oAP": "\/img\/siddharthashok_square.jpg",
 		"oF": 0,
 		"oIPL": 0,
 		"opt": 0,

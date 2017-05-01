@@ -56,6 +56,8 @@ body.single-post {color: $popup_text;}
 
 h1,h2,h3,h4,h5 {font-family: $font_bold; font-weight: 700; color: $white;}
 
+h1.entry-title {font-size: 42px;}
+
 p {font-size: 24px; letter-spacing: 0.5px; line-height: 40px; margin-bottom: 40px;}
 
 h2 {font-size: 36px; letter-spacing: 1.4px;}
@@ -82,7 +84,7 @@ a {color: $white; border-bottom: 2px solid rgb(94, 111, 173);
 // Sidd Logo
 
 .image-logo-wrap { width: 250px; height: 250px; position: relative; float: none; margin-left: 20px; margin-bottom: 60px; margin-top: 27px;
-  img {width:100%; position:relative; z-index:1;}
+  img {width:100%; position:relative; z-index:1; -webkit-filter: grayscale(100%); filter: grayscale(100%);}
   .overlay {position:absolute; top:0px; left:0px; z-index:11; width:100%; height:100%; background:$blue; opacity: 0.3; @include transition(all 0.5s ease);}
   &:after {content:""; position:absolute; width:100%; height:100%; top:20px; left:-20px; z-index:12; border: 2px solid $white; @include transition(all 0.5s ease);}
   &:before {content:""; position:absolute; width:100%; height:100%; top:-20px; left:20px; z-index:13; border: 2px solid $white; @include transition(all 0.5s ease);}
@@ -114,23 +116,26 @@ a {color: $white; border-bottom: 2px solid rgb(94, 111, 173);
 // Header styles
 
 header {
-  .image-logo-wrap {width: 60px; height: 60px; float: left;
-    &:after {top:5px; left:-5px;}
-    &:before {top:-5px; left:5px;}
+  .image-logo-wrap {width: 40px; height: 40px; float: left; margin-bottom: 3px; margin-top: 3px;
+    &:after {top:3px; left:-3px;}
+    &:before {top:-3px; left:3px;}
     &:hover {
-      &:after {left:5px; top:-5px;}
-      &:before {left:-5px; top:5px;}
+      &:after {left:3px; top:-3px;}
+      &:before {left:-3px; top:3px;}
     }
   }
-  &:hover {
+  h1.sidd {background: none; color: #F6F3EB; margin-left: 20px; margin-top: 10px; margin-bottom: 0px;float: left; font-size: 26px; line-height: 30px; letter-spacing: 1px;}
+  nav {margin-top: 2px;}
+
+  .logo-home-link-wrap:hover {
     .image-logo-wrap{
-      &:after {left:5px; top:-5px;}
-      &:before {left:-5px; top:5px;}
+      &:after {left:3px; top:-3px;}
+      &:before {left:-3px; top:3px;}
     }
   }
-  h1.sidd {background: none; color: #F6F3EB; margin-left: 20px; margin-top: 29px; float: left; font-size: 21px; line-height: 30px; letter-spacing: 1px;}
-  nav {margin-top: 36px;}
 }
+
+.site-header {border-bottom: 2px dotted; padding: 20px 0px; margin-bottom: 40px;}
 
 // Menu
 

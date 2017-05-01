@@ -59,13 +59,13 @@
 
   <?php } else {?>
 
-    <header>
+    <header class="site-header">
     		<div class="row">
     			<div class="medium-12 columns">
-            <div class="float-left">
+            <div class="float-left logo-home-link-wrap">
               <a href="<?php echo site_url(); ?>">
         				<div class="image-logo-wrap"></div>
-        				<h1 class="sidd">Siddharth<br>Ashok</h1>
+        				<h1 class="sidd">Siddharth Ashok</h1>
               </a>
             </div>
             <div class="float-right">

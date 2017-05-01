@@ -40,6 +40,9 @@ h1, h2, h3, h4, h5 {
   font-weight: 700;
   color: #F6F3EB; }
 
+h1.entry-title {
+  font-size: 42px; }
+
 p {
   font-size: 24px;
   letter-spacing: 0.5px;
@@ -103,7 +106,9 @@ a {
   .image-logo-wrap img {
     width: 100%;
     position: relative;
-    z-index: 1; }
+    z-index: 1;
+    -webkit-filter: grayscale(100%);
+    filter: grayscale(100%); }
   .image-logo-wrap .overlay {
     position: absolute;
     top: 0px;
@@ -214,42 +219,50 @@ a {
     transition: all 0.5s ease; }
 
 header .image-logo-wrap {
-  width: 60px;
-  height: 60px;
-  float: left; }
+  width: 40px;
+  height: 40px;
+  float: left;
+  margin-bottom: 3px;
+  margin-top: 3px; }
   header .image-logo-wrap:after {
-    top: 5px;
-    left: -5px; }
+    top: 3px;
+    left: -3px; }
   header .image-logo-wrap:before {
-    top: -5px;
-    left: 5px; }
+    top: -3px;
+    left: 3px; }
   header .image-logo-wrap:hover:after {
-    left: 5px;
-    top: -5px; }
+    left: 3px;
+    top: -3px; }
   header .image-logo-wrap:hover:before {
-    left: -5px;
-    top: 5px; }
-
-header:hover .image-logo-wrap:after {
-  left: 5px;
-  top: -5px; }
-
-header:hover .image-logo-wrap:before {
-  left: -5px;
-  top: 5px; }
+    left: -3px;
+    top: 3px; }
 
 header h1.sidd {
   background: none;
   color: #F6F3EB;
   margin-left: 20px;
-  margin-top: 29px;
+  margin-top: 10px;
+  margin-bottom: 0px;
   float: left;
-  font-size: 21px;
+  font-size: 26px;
   line-height: 30px;
   letter-spacing: 1px; }
 
 header nav {
-  margin-top: 36px; }
+  margin-top: 2px; }
+
+header .logo-home-link-wrap:hover .image-logo-wrap:after {
+  left: 3px;
+  top: -3px; }
+
+header .logo-home-link-wrap:hover .image-logo-wrap:before {
+  left: -3px;
+  top: 3px; }
+
+.site-header {
+  border-bottom: 2px dotted;
+  padding: 20px 0px;
+  margin-bottom: 40px; }
 
 .menu > li > a {
   border: none; }
