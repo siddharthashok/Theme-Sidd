@@ -32,9 +32,6 @@ body {
   background: #384D9D;
   color: #F6F3EB; }
 
-body.single-post {
-  color: #403D34; }
-
 h1, h2, h3, h4, h5 {
   font-family: "Source Serif Pro", serif;
   font-weight: 700;
@@ -260,7 +257,7 @@ header .logo-home-link-wrap:hover .image-logo-wrap:before {
   top: 3px; }
 
 .site-header {
-  border-bottom: 2px dotted;
+  border-bottom: 1px dotted #F6F3EB;
   padding: 20px 0px;
   margin-bottom: 40px; }
 
@@ -283,31 +280,35 @@ header .logo-home-link-wrap:hover .image-logo-wrap:before {
 .posts-navigation h2 {
   display: none; }
 
-.full.reveal, .single-post {
+.full.reveal {
   background: #f3f1ed; }
-  .full.reveal h1, .full.reveal h2, .full.reveal h3, .full.reveal h4, .full.reveal h5, .full.reveal p, .full.reveal ul li, .single-post h1, .single-post h2, .single-post h3, .single-post h4, .single-post h5, .single-post p, .single-post ul li {
+  .full.reveal h1, .full.reveal h2, .full.reveal h3, .full.reveal h4, .full.reveal h5, .full.reveal p, .full.reveal ul li {
     color: #403D34; }
-  .full.reveal a, .single-post a {
+  .full.reveal a {
     color: #403D34;
     border-color: #403D34; }
-    .full.reveal a:hover, .single-post a:hover {
+    .full.reveal a:hover {
       background: #403D34;
       color: #f3f1ed; }
-  .full.reveal .comment-link, .single-post .comment-link {
+  .full.reveal .comment-link {
     border: 2px solid transparent; }
-    .full.reveal .comment-link img, .single-post .comment-link img {
+    .full.reveal .comment-link img {
       width: 25px;
       margin-right: 10px; }
-    .full.reveal .comment-link:hover, .single-post .comment-link:hover {
+    .full.reveal .comment-link:hover {
       background: transparent;
       color: #403D34; }
-  .full.reveal .image-logo-wrap:before, .full.reveal .image-logo-wrap:after, .single-post .image-logo-wrap:before, .single-post .image-logo-wrap:after {
+  .full.reveal .image-logo-wrap:before, .full.reveal .image-logo-wrap:after {
     border-color: #403D34; }
-  .full.reveal header h1.sidd, .single-post header h1.sidd {
+  .full.reveal header h1.sidd {
     color: #403D34; }
-  .full.reveal .entry-meta .posted-on, .single-post .entry-meta .posted-on {
-    text-align: center;
-    margin-bottom: 15px; }
+
+nav.post-navigation {
+  display: none; }
+
+.entry-meta .posted-on {
+  text-align: center;
+  margin-bottom: 15px; }
 
 pre {
   overflow: scroll; }
