@@ -29,13 +29,13 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.io/normalize.css/
 body {
   font-family: "Source Sans Pro", sans-serif;
   font-weight: normal;
-  background: #384D9D;
-  color: #F6F3EB; }
+  background: #F9F7E8;
+  color: #181A27; }
 
 h1, h2, h3, h4, h5 {
   font-family: "Source Serif Pro", serif;
   font-weight: 700;
-  color: #F6F3EB; }
+  color: #181A27; }
 
 h1.entry-title {
   font-size: 42px; }
@@ -58,11 +58,15 @@ h3 {
   margin-bottom: 10px; }
 
 a {
-  color: #F6F3EB;
-  border-bottom: 2px solid #5e6fad; }
+  color: #181A27;
+  border-bottom: 2px solid rgba(24, 26, 39, 0.7); }
   a:hover, a:focus {
-    background: #5e6fad;
-    color: #ffffff; }
+    background: rgba(24, 26, 39, 0.7);
+    color: #F9F7E8;
+    -moz-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    -webkit-transition: all 0.5s ease;
+    transition: all 0.5s ease; }
 
 .bold {
   font-family: "Source Serif Pro", serif;
@@ -113,7 +117,7 @@ a {
     z-index: 11;
     width: 100%;
     height: 100%;
-    background: #384D9D;
+    background: #F9F7E8;
     opacity: 0.3;
     -moz-transition: all 0.5s ease;
     -o-transition: all 0.5s ease;
@@ -127,7 +131,7 @@ a {
     top: 20px;
     left: -20px;
     z-index: 12;
-    border: 2px solid #F6F3EB;
+    border: 2px solid #181A27;
     -moz-transition: all 0.5s ease;
     -o-transition: all 0.5s ease;
     -webkit-transition: all 0.5s ease;
@@ -140,7 +144,7 @@ a {
     top: -20px;
     left: 20px;
     z-index: 13;
-    border: 2px solid #F6F3EB;
+    border: 2px solid #181A27;
     -moz-transition: all 0.5s ease;
     -o-transition: all 0.5s ease;
     -webkit-transition: all 0.5s ease;
@@ -159,8 +163,8 @@ a {
   line-height: 68px;
   letter-spacing: 1.9px; }
   .sidd span {
-    color: #384D9D;
-    background: #F6F3EB;
+    color: #F9F7E8;
+    background: #181A27;
     display: inline;
     padding: 0px 40px 0px 10px;
     box-decoration-break: clone;
@@ -257,7 +261,7 @@ header .logo-home-link-wrap:hover .image-logo-wrap:before {
   top: 3px; }
 
 .site-header {
-  border-bottom: 1px dotted #F6F3EB;
+  border-bottom: 1px dotted #181A27;
   padding: 20px 0px;
   margin-bottom: 40px; }
 
@@ -265,7 +269,7 @@ header .logo-home-link-wrap:hover .image-logo-wrap:before {
   border: none; }
 
 #blog .posts-wrap .post {
-  border: 2px solid rgba(246, 243, 235, 0.2);
+  border: 2px solid rgba(24, 26, 39, 0.05);
   padding: 20px;
   margin-bottom: 20px; }
   #blog .posts-wrap .post p {
@@ -273,9 +277,19 @@ header .logo-home-link-wrap:hover .image-logo-wrap:before {
     line-height: 28px;
     letter-spacing: 0.38px;
     margin: 0px; }
+  #blog .posts-wrap .post:hover {
+    border: 2px solid rgba(24, 26, 39, 0.3);
+    -moz-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    -webkit-transition: all 0.5s ease;
+    transition: all 0.5s ease; }
 
 #blog .posts-wrap .column:last-child:not(:first-child), #blog .posts-wrap .columns:last-child:not(:first-child) {
   float: left; }
+
+#blog .posts-wrap a:hover {
+  background: transparent;
+  color: #181A27; }
 
 .posts-navigation h2 {
   display: none; }
