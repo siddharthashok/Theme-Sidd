@@ -61,21 +61,21 @@ get_header();
 
 </section>
 
-<section id="upcoming-events">
+<!-- <section id="upcoming-events">
 	<div class="row">
 		<div class="large-12 columns">
 			<h2>Upcoming Events</h2>
 
 			<div class="events">
 				<div class="event">
-					
+
 				</div>
 			</div>
 		</div>
 	</div>
 
 
-</section>
+</section> -->
 
 <!-- AJAX -->
 <!-- <div class="full reveal" id="post-model" data-reveal>
