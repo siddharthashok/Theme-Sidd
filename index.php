@@ -18,7 +18,7 @@ get_header();
 <section id="blog">
 	<div class="row">
 		<div class="large-12 columns">
-			<h2>Blog</h2>
+			<h2>Recent Posts</h2>
 		</div>
 	</div>
 
@@ -36,7 +36,9 @@ get_header();
 					<div class="large-6 columns">
 						<!-- <a data-open="post-model" data-post-id="<?php echo get_the_ID(); ?>" class="load-modal"> -->
 						<a href="<?php the_permalink(); ?>">
-							<div class="post">
+							<div class="post<?php if(get_post_format() == 'gallery') {echo " gallery";}?>" <?php
+							$thumbnail = get_the_post_thumbnail_url();
+							if(get_post_format() == 'gallery' && $thumbnail) {?>style="background-image: url('<?php echo $thumbnail; ?>');"<?php } ?>>
 								<h3 class="post-title"><?php the_title(); ?></h3>
 								<div class="excerpt">
 									<p><?php the_excerpt(); ?></p>

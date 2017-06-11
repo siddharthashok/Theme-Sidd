@@ -123,6 +123,12 @@ function sidd_scripts() {
 add_action( 'wp_enqueue_scripts', 'sidd_scripts' );
 
 /**
+* Enable Post Formats
+*/
+
+add_theme_support( 'post-formats', array( 'link', 'gallery', 'video' ) );
+
+/**
  * Implement the Custom Header feature.
  */
 require get_template_directory() . '/inc/custom-header.php';
