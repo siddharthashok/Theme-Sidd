@@ -11,6 +11,26 @@
 
 ?>
 
+<footer>
+<svg class="slant white" xmlns="http://www.w3.org/2000/svg" version="1.1" width="100%" height="100" viewBox="0 0 100 102" preserveAspectRatio="none">
+	<path d="M0 0 L100 100 L100 0 Z"></path>
+</svg>
+
+<div class="row">
+	<div class="columns medium-4">
+		<div class="image-logo-wrap"></div>
+		<h4 class="">Siddharth Ashok</h4>
+		<p>Feel free to mail me <a href="mailto:hello@sidd.in">hello@sidd.in</a></p>
+
+	</div>
+	<div class="columns medium-offset-4 medium-4">
+		<p class="follow-me">Follow Me</p>
+		<div class="social github"><a href="#"><img src="<?php echo get_template_directory_uri(); ?>/img/footer_github.svg" alt=""></a></div>
+		<div class="social instagram"><a href="#"><img src="<?php echo get_template_directory_uri(); ?>/img/footer_instagram.svg" alt=""></a></div>
+		<div class="social twitter"><a href="#"><img src="<?php echo get_template_directory_uri(); ?>/img/footer_twitter.svg" alt="Siddharth Ashok's Twitter"></a></div>
+	</div>
+</div>
+</footer>
 <?php wp_footer(); ?>
 
 <script type="text/javascript">

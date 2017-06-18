@@ -88,8 +88,8 @@ a {color: $black; border-bottom: 2px solid rgba(24, 26, 39, 0.3);
 .image-logo-wrap { width: 250px; height: 250px; position: relative; float: none; margin-left: 20px; margin-bottom: 60px; margin-top: 27px;
   img {width:100%; position:relative; z-index:1; -webkit-filter: grayscale(100%); filter: grayscale(100%);}
   .overlay {position:absolute; top:0px; left:0px; z-index:11; width:100%; height:100%; background:$white; opacity: 0.3; @include transition(all 0.5s ease);}
-  &:after {content:""; position:absolute; width:100%; height:100%; top:20px; left:-20px; z-index:12; border: 2px solid $black; @include transition(all 0.5s ease);}
-  &:before {content:""; position:absolute; width:100%; height:100%; top:-20px; left:20px; z-index:13; border: 2px solid $black; @include transition(all 0.5s ease);}
+  &:after {content:""; position:absolute; width:100%; height:100%; top:20px; left:-20px; z-index:12; border: 4px solid $black; @include transition(all 0.5s ease);}
+  &:before {content:""; position:absolute; width:100%; height:100%; top:-20px; left:20px; z-index:13; border: 4px solid $black; @include transition(all 0.5s ease);}
   &:hover {
     &:after {left:10px; top:-10px;}
     &:before {left:-10px; top:10px;}
@@ -147,14 +147,14 @@ header {
 
 #blog {
   .posts-wrap {
-    .post {border: 2px solid rgba(24, 26, 39, 0.05); padding: 20px; margin-bottom: 20px;
+    .post {border: 5px solid rgba(24, 26, 39, 0.05); padding: 20px; margin-bottom: 20px;
       p {font-size: 18px; line-height: 28px; letter-spacing: 0.38px; margin: 0px;}
-      &:hover {border: 2px solid rgba(24, 26, 39, 0.3); @include transition(all 0.5s ease);}
+      &:hover {border: 5px solid rgba(24, 26, 39, 0.3); @include transition(all 0.5s ease);}
 
       &.gallery {background-size: cover; background-position: center; position: relative; z-index: 1; border: 0px; padding: 150px 20px 20px;
         &:after {content: ""; position: absolute; background: rgba(249, 247, 232, 0.8); width: 100%; height: 100%; left: 0; bottom: 0; z-index: -1;}
         &:hover {-webkit-filter: grayscale(100%); filter: gray; @include transition(all 1.4s ease);
-          h3, p {color: $white; @include transition(all 0.7s ease);}
+          h3, p {color: $white; @include transition(all 0.3s ease);}
           &:after {height: 60%;
             background: -moz-linear-gradient(top,  rgba(0,0,0,0) 0%, rgba(0,0,0,0.65) 100%); /* FF3.6-15 */
             background: -webkit-linear-gradient(top,  rgba(0,0,0,0) 0%,rgba(0,0,0,0.65) 100%); /* Chrome10-25,Safari5.1-6 */
@@ -199,25 +199,46 @@ figure {max-width: 100%;}
 
 .close-button {position: fixed;}
 
-
+.nav-links {display: block; width: 100%;
+  a {font-family: $font_normal; font-size: 24px; letter-spacing: 1px; line-height: normal; font-weight: 700;}
+  .nav-previous {float: right;
+    &:after {content: ""; width: 30px; height: 30px; background-image: url('img/arrow-right.svg'); display: block;}
+  }
+}
 
 // SVG Slant effect
-svg.slant { pointer-events: none; height: 150px; z-index: 9998; position: relative; padding-top: 5px;}
+svg.slant { pointer-events: none; height: 150px; z-index: 1; position: relative;}
+.white path {fill: $white; stroke: $white; stroke-width: 4px;}
+
 svg.topone {top: -10px; margin-top: -140px; -ms-transform: rotateY(180deg); -webkit-transform: rotateY(180deg); transform: rotateY(180deg);}
 svg.bottomone {bottom: -150px; margin-top: -150px;}
-.whiteslant path {fill: rgb(255, 255, 255); stroke: rgb(255, 255, 255); stroke-width: 4px;}
-.offwhite path {fill: #f2f2f2; stroke: #f2f2f2; stroke-width: 4px;}
-.white path {fill: #ffffff; stroke: #ffffff; stroke-width: 4px;}
-.purple_l path {fill: $purple_l; stroke: $purple_l; stroke-width: 4px;}
 
 
 .picture_story{
 	.large-3.columns, .large-8.columns{padding-left: 0px; padding-bottom: 0.9375rem;}
 }
 
-//footer follow me
-#follow_me {width: 100%;height: 500px; background-color: $purple_d; position: relative;
+// Footer
+footer {width: 100%; height: 500px; background-color: $black; position: relative; margin-top: 100px;
 	// &:after {content: ""; position: absolute; top:0px; left: 0px; background: rgba(96, 86, 113, 0.6); height: 100%; width: 100%;}
+  .image-logo-wrap { width: 83.33px; height: 83.33px; margin-bottom: 30px;
+    &:after {border: 4px solid $white; top: 7.5px; left: -7.5px;}
+    &:before {border: 4px solid $white; top: -7.5px; left: 7.5px;}
+    &:hover {
+      &:after {left: 7.5px; top: -7.5px;}
+      &:before {left: -7.5px; top: 7.5px;}
+    }
+  }
+  h4 {color:$white; font-size: 38px;}
+  p {color: $white; line-height: 32px;
+    a {color: $white; border: none;
+    &:hover {border-color: $white;}
+  }
+  }
+  .follow-me {color: $white;}
+  .social{margin-left: 40px; float: right; width: 64px;
+    img {}
+  }
 }
 
 
