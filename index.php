@@ -18,7 +18,7 @@ get_header();
 <section id="blog">
 	<div class="row">
 		<div class="large-12 columns">
-			<!-- <h2>Recent Posts</h2> -->
+			<h2>Recent Posts</h2>
 		</div>
 	</div>
 

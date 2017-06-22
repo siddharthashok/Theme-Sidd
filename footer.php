@@ -17,17 +17,49 @@
 </svg>
 
 <div class="row">
-	<div class="columns medium-4">
+	<div class="columns medium-5 medium-centered center">
+		<a href="<?php echo site_url(); ?>">
 		<div class="image-logo-wrap"></div>
 		<h4 class="">Siddharth Ashok</h4>
-		<p>Feel free to mail me <a href="mailto:hello@sidd.in">hello@sidd.in</a></p>
+		</a>
+
+		<div class="social-links">
+			<p class="follow-me">Follow me @siddharthashok</p>
+			<div class="social github">
+				<span data-tooltip aria-haspopup="true" class="has-tip" data-disable-hover="false" tabindex="1" title="Follow me on GitHub">
+					<a href="https://github.com/siddharthashok" target="_blank"><img src="<?php echo get_template_directory_uri(); ?>/img/footer_github.svg" alt=""></a>
+				</span>
+			</div>
+			<div class="social instagram">
+				<span data-tooltip aria-haspopup="true" class="has-tip" data-disable-hover="false" tabindex="2" title="Follow my story on Instagram">
+					<a href="https://www.instagram.com/siddharthashok/" target="_blank"><img src="<?php echo get_template_directory_uri(); ?>/img/footer_instagram.svg" alt=""></a>
+				</span>
+			</div>
+			<div class="social twitter">
+				<span data-tooltip aria-haspopup="true" class="has-tip" data-disable-hover="false" tabindex="3" title="Follow me on Twitter">
+					<a href="https://twitter.com/siddharthashok" target="_blank"><img src="<?php echo get_template_directory_uri(); ?>/img/footer_twitter.svg" alt="Siddharth Ashok's Twitter"></a>
+				</span>
+			</div>
+		</div>
+	</div>
+	<div class="columns medium-offset-3 medium-4">
 
 	</div>
-	<div class="columns medium-offset-4 medium-4">
-		<p class="follow-me">Follow Me</p>
-		<div class="social github"><a href="#"><img src="<?php echo get_template_directory_uri(); ?>/img/footer_github.svg" alt=""></a></div>
-		<div class="social instagram"><a href="#"><img src="<?php echo get_template_directory_uri(); ?>/img/footer_instagram.svg" alt=""></a></div>
-		<div class="social twitter"><a href="#"><img src="<?php echo get_template_directory_uri(); ?>/img/footer_twitter.svg" alt="Siddharth Ashok's Twitter"></a></div>
+	<div class="columns medium-8 medium-centered center">
+		<div class="about-the-site">
+			<p>This site is powered by WordPress, uses custom theme build on Foundation framework.</p>
+			<p>The content of this site is licensed under <a href="http://creativecommons.org/licenses/by-sa/4.0/" target="_blank">Creative Commons Attribution-ShareAlike 4.0 International License</a>. Supporting humanity with "<a href="http://freedomdefined.org/Definition" target="_blank">Free Cultural Works</a>".</p>
+		</div>
+
+		<!-- <p>Feel free to mail me <a href="">hello@sidd.in</a></p> -->
+
+
+		<ul class="footer-navigation">
+			<li><a href="#">About</a></li>
+			<li><a href="#">Blog</a></li>
+			<li><a href="mailto:hello@sidd.in">Contact</a></li>
+		</ul>
+
 	</div>
 </div>
 </footer>

@@ -153,6 +153,7 @@ header {
 
       &.gallery {background-size: cover; background-position: center; position: relative; z-index: 1; border: 0px; padding: 150px 20px 20px;
         &:after {content: ""; position: absolute; background: rgba(249, 247, 232, 0.8); width: 100%; height: 100%; left: 0; bottom: 0; z-index: -1;}
+        &:before {content: ""; position: absolute; background-image: radial-gradient(circle at 50% 50%, rgba(255, 255, 255, 0) 70%, rgb(24, 26, 39) 140%); width: 100%; height: 100%; left: 0; bottom: 0; z-index: -1;}
         &:hover {-webkit-filter: grayscale(100%); filter: gray; @include transition(all 1.4s ease);
           h3, p {color: $white; @include transition(all 0.3s ease);}
           &:after {height: 60%;
@@ -219,9 +220,9 @@ svg.bottomone {bottom: -150px; margin-top: -150px;}
 }
 
 // Footer
-footer {width: 100%; height: 500px; background-color: $black; position: relative; margin-top: 100px;
+footer {width: 100%; background-color: $black; position: relative; margin-top: 100px; padding-bottom: 40px;
 	// &:after {content: ""; position: absolute; top:0px; left: 0px; background: rgba(96, 86, 113, 0.6); height: 100%; width: 100%;}
-  .image-logo-wrap { width: 83.33px; height: 83.33px; margin-bottom: 30px;
+  .image-logo-wrap { width: 83.33px; height: 83.33px; margin-bottom: 30px; margin: 40px auto 30px;
     &:after {border: 4px solid $white; top: 7.5px; left: -7.5px;}
     &:before {border: 4px solid $white; top: -7.5px; left: 7.5px;}
     &:hover {
@@ -230,18 +231,33 @@ footer {width: 100%; height: 500px; background-color: $black; position: relative
     }
   }
   h4 {color:$white; font-size: 38px;}
-  p {color: $white; line-height: 32px;
+  p {color: $white; line-height: 24px; font-size: 18px; margin-bottom: 20px;
     a {color: $white; border: none;
     &:hover {border-color: $white;}
   }
   }
-  .follow-me {color: $white;}
-  .social{margin-left: 40px; float: right; width: 64px;
-    img {}
+  .follow-me {color: $white; margin-top: 40px;
+    span {padding-left: 10px; font-size: 16px;}
+  }
+  .social-links { margin-bottom: 40px;
+    .social{width: 50px; display: inline-block; margin: 0px 15px;
+      img {width: 100%; display: block;}
+    }
+  }
+  .about-the-site {margin-bottom: 40px;
+    p {font-size: 14px; color: #9a9990; line-height: 20px; margin-bottom: 20px;}
+    a {color: #9a9990;}
+  }
+  .footer-navigation {list-style: none; margin: 40px 0px; text-align: center;
+    li {display: inline-block; margin: 0px 15px;
+      a {color: $white; text-transform: uppercase; letter-spacing: 2px;}
+    }
   }
 }
 
-
+.has-tip {border: none; cursor: auto;}
+.tooltip{background:$white; color:$black; padding: 5px 10px; border-radius: 5px; font-size: 18px; text-align: center;}
+.tooltip:before {border-color: transparent transparent $white;}
 
 // Poloriad Instagram
 
