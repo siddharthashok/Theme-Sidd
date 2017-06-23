@@ -38,7 +38,7 @@ h1, h2, h3, h4, h5 {
   color: #181A27; }
 
 h1.entry-title {
-  font-size: 42px; }
+  font-size: 56px; }
 
 p {
   font-size: 24px;
@@ -221,53 +221,63 @@ a {
     transition: all 0.5s ease; }
 
 header .image-logo-wrap {
-  width: 40px;
-  height: 40px;
-  float: left;
-  margin-bottom: 3px;
-  margin-top: 3px; }
+  width: 83.33px;
+  height: 83.33px;
+  margin: 0px;
+  margin-top: 10px;
+  float: left; }
   header .image-logo-wrap:after {
-    top: 3px;
-    left: -3px; }
+    border: 4px solid #181A27;
+    top: 7.5px;
+    left: -7.5px; }
   header .image-logo-wrap:before {
-    top: -3px;
-    left: 3px; }
+    border: 4px solid #181A27;
+    top: -7.5px;
+    left: 7.5px; }
   header .image-logo-wrap:hover:after {
-    left: 3px;
-    top: -3px; }
+    left: 7.5px;
+    top: -7.5px; }
   header .image-logo-wrap:hover:before {
-    left: -3px;
-    top: 3px; }
+    left: -7.5px;
+    top: 7.5px; }
 
 header h1.sidd {
-  background: none;
-  color: #F6F3EB;
-  margin-left: 20px;
-  margin-top: 10px;
+  color: #F9F7E8;
+  margin-left: 30px;
   margin-bottom: 0px;
   float: left;
-  font-size: 26px;
-  line-height: 30px;
-  letter-spacing: 1px; }
+  font-size: 34px;
+  line-height: 48px;
+  letter-spacing: 1px;
+  width: 200px; }
+  header h1.sidd span {
+    padding: 0px 30px 0px 10px; }
 
 header nav {
-  margin-top: 2px; }
+  margin-top: 30px; }
 
 header .logo-home-link-wrap:hover .image-logo-wrap:after {
-  left: 3px;
-  top: -3px; }
+  left: 7.5px;
+  top: -7.5px; }
 
 header .logo-home-link-wrap:hover .image-logo-wrap:before {
-  left: -3px;
-  top: 3px; }
+  left: -7.5px;
+  top: 7.5px; }
 
 .site-header {
-  border-bottom: 1px dotted #181A27;
-  padding: 20px 0px;
+  padding: 40px 0px;
   margin-bottom: 40px; }
 
 .menu > li > a {
-  border: none; }
+  border-bottom: 2px solid transparent;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  padding: 10px 5px;
+  margin: 0px 10px; }
+  .menu > li > a:hover {
+    border-color: #181A27;
+    background: none;
+    color: #181A27; }
 
 #blog .posts-wrap .post {
   border: 5px solid rgba(24, 26, 39, 0.05);
@@ -517,6 +527,17 @@ footer {
 
 .tooltip:before {
   border-color: transparent transparent #F9F7E8; }
+
+.entry-content {
+  padding: 0px 160px; }
+  .entry-content img.alignfull {
+    max-width: calc(100% + 320px);
+    margin-left: -160px;
+    margin-right: -160px; }
+  .entry-content img.alignfull {
+    max-width: 100vw;
+    margin-left: calc(-50vw + (50% - 8px));
+    margin-right: calc(-50vw + (50% - 8px)); }
 
 #instagram {
   width: 100%;

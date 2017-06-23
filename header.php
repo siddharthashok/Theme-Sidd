@@ -65,7 +65,7 @@
             <div class="float-left logo-home-link-wrap">
               <a href="<?php echo site_url(); ?>">
         				<div class="image-logo-wrap"></div>
-        				<h1 class="sidd">Siddharth Ashok</h1>
+        				<h1 class="sidd"><span>Siddharth Ashok</span></h1>
               </a>
             </div>
             <div class="float-right">
