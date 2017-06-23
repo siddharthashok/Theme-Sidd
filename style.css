@@ -220,53 +220,54 @@ a {
     -webkit-transition: all 0.5s ease;
     transition: all 0.5s ease; }
 
-header .image-logo-wrap {
-  width: 83.33px;
-  height: 83.33px;
-  margin: 0px;
-  margin-top: 10px;
-  float: left; }
-  header .image-logo-wrap:after {
-    border: 4px solid #181A27;
-    top: 7.5px;
-    left: -7.5px; }
-  header .image-logo-wrap:before {
-    border: 4px solid #181A27;
-    top: -7.5px;
-    left: 7.5px; }
-  header .image-logo-wrap:hover:after {
-    left: 7.5px;
-    top: -7.5px; }
-  header .image-logo-wrap:hover:before {
-    left: -7.5px;
-    top: 7.5px; }
-
-header h1.sidd {
-  color: #F9F7E8;
-  margin-left: 30px;
-  margin-bottom: 0px;
-  float: left;
-  font-size: 34px;
-  line-height: 48px;
-  letter-spacing: 1px;
-  width: 200px; }
-  header h1.sidd span {
-    padding: 0px 30px 0px 10px; }
-
-header nav {
-  margin-top: 30px; }
-
-header .logo-home-link-wrap:hover .image-logo-wrap:after {
-  left: 7.5px;
-  top: -7.5px; }
-
-header .logo-home-link-wrap:hover .image-logo-wrap:before {
-  left: -7.5px;
-  top: 7.5px; }
-
-.site-header {
+header.site-header {
   padding: 40px 0px;
   margin-bottom: 40px; }
+  header.site-header .image-logo-wrap {
+    width: 83.33px;
+    height: 83.33px;
+    margin: 0px;
+    margin-top: 10px;
+    float: left; }
+    header.site-header .image-logo-wrap:after {
+      border: 4px solid #181A27;
+      top: 7.5px;
+      left: -7.5px; }
+    header.site-header .image-logo-wrap:before {
+      border: 4px solid #181A27;
+      top: -7.5px;
+      left: 7.5px; }
+    header.site-header .image-logo-wrap:hover:after {
+      left: 7.5px;
+      top: -7.5px; }
+    header.site-header .image-logo-wrap:hover:before {
+      left: -7.5px;
+      top: 7.5px; }
+  header.site-header h1.sidd {
+    color: #F9F7E8;
+    margin-left: 30px;
+    margin-bottom: 0px;
+    float: left;
+    font-size: 34px;
+    line-height: 48px;
+    letter-spacing: 1px;
+    width: 200px; }
+    header.site-header h1.sidd span {
+      padding: 0px 30px 0px 10px; }
+  header.site-header nav {
+    margin-top: 30px; }
+  header.site-header .logo-home-link-wrap:hover .image-logo-wrap:after {
+    left: 7.5px;
+    top: -7.5px; }
+  header.site-header .logo-home-link-wrap:hover .image-logo-wrap:before {
+    left: -7.5px;
+    top: 7.5px; }
+  header.site-header .site-search-link {
+    padding: 33px 0px 10px 10px;
+    cursor: pointer; }
+    header.site-header .site-search-link img {
+      width: 20px;
+      height: 20px; }
 
 .menu > li > a {
   border-bottom: 2px solid transparent;
@@ -376,13 +377,6 @@ header .logo-home-link-wrap:hover .image-logo-wrap:before {
   .full.reveal header h1.sidd {
     color: #403D34; }
 
-nav.post-navigation {
-  display: none; }
-
-.entry-meta .posted-on {
-  text-align: center;
-  margin-bottom: 15px; }
-
 pre {
   overflow: scroll; }
 
@@ -397,21 +391,45 @@ figure {
 
 .nav-links {
   display: block;
-  width: 100%; }
+  width: 100%;
+  margin-top: 40px; }
   .nav-links a {
     font-family: "Source Sans Pro", sans-serif;
     font-size: 24px;
     letter-spacing: 1px;
     line-height: normal;
-    font-weight: 700; }
+    font-weight: 700;
+    margin: 0px 10px;
+    border: 0px; }
+    .nav-links a:hover {
+      background: none;
+      color: #181A27;
+      border-bottom: 2px solid #181A27;
+      transition: none; }
   .nav-links .nav-previous {
     float: right; }
     .nav-links .nav-previous:after {
       content: "";
-      width: 30px;
-      height: 30px;
-      background-image: url("img/arrow-right.svg");
-      display: block; }
+      width: 25px;
+      height: 25px;
+      background-image: url(img/arrow-right.svg);
+      background-size: 100%;
+      background-repeat: no-repeat;
+      display: inline-block;
+      position: relative;
+      top: 7px; }
+  .nav-links .nav-next {
+    float: left; }
+    .nav-links .nav-next:before {
+      content: "";
+      width: 25px;
+      height: 25px;
+      background-image: url(img/arrow-left.svg);
+      background-size: 100%;
+      background-repeat: no-repeat;
+      display: inline-block;
+      position: relative;
+      top: 7px; }
 
 svg.slant {
   pointer-events: none;
@@ -439,76 +457,76 @@ svg.bottomone {
   padding-left: 0px;
   padding-bottom: 0.9375rem; }
 
-footer {
+footer.site-footer {
   width: 100%;
   background-color: #181A27;
   position: relative;
-  margin-top: 100px;
+  margin-top: 80px;
   padding-bottom: 40px; }
-  footer .image-logo-wrap {
+  footer.site-footer .image-logo-wrap {
     width: 83.33px;
     height: 83.33px;
     margin-bottom: 30px;
     margin: 40px auto 30px; }
-    footer .image-logo-wrap:after {
+    footer.site-footer .image-logo-wrap:after {
       border: 4px solid #F9F7E8;
       top: 7.5px;
       left: -7.5px; }
-    footer .image-logo-wrap:before {
+    footer.site-footer .image-logo-wrap:before {
       border: 4px solid #F9F7E8;
       top: -7.5px;
       left: 7.5px; }
-    footer .image-logo-wrap:hover:after {
+    footer.site-footer .image-logo-wrap:hover:after {
       left: 7.5px;
       top: -7.5px; }
-    footer .image-logo-wrap:hover:before {
+    footer.site-footer .image-logo-wrap:hover:before {
       left: -7.5px;
       top: 7.5px; }
-  footer h4 {
+  footer.site-footer h4 {
     color: #F9F7E8;
     font-size: 38px; }
-  footer p {
+  footer.site-footer p {
     color: #F9F7E8;
     line-height: 24px;
     font-size: 18px;
     margin-bottom: 20px; }
-    footer p a {
+    footer.site-footer p a {
       color: #F9F7E8;
       border: none; }
-      footer p a:hover {
+      footer.site-footer p a:hover {
         border-color: #F9F7E8; }
-  footer .follow-me {
+  footer.site-footer .follow-me {
     color: #F9F7E8;
     margin-top: 40px; }
-    footer .follow-me span {
+    footer.site-footer .follow-me span {
       padding-left: 10px;
       font-size: 16px; }
-  footer .social-links {
+  footer.site-footer .social-links {
     margin-bottom: 40px; }
-    footer .social-links .social {
+    footer.site-footer .social-links .social {
       width: 50px;
       display: inline-block;
       margin: 0px 15px; }
-      footer .social-links .social img {
+      footer.site-footer .social-links .social img {
         width: 100%;
         display: block; }
-  footer .about-the-site {
+  footer.site-footer .about-the-site {
     margin-bottom: 40px; }
-    footer .about-the-site p {
+    footer.site-footer .about-the-site p {
       font-size: 14px;
       color: #9a9990;
       line-height: 20px;
       margin-bottom: 20px; }
-    footer .about-the-site a {
+    footer.site-footer .about-the-site a {
       color: #9a9990; }
-  footer .footer-navigation {
+  footer.site-footer .footer-navigation {
     list-style: none;
     margin: 40px 0px;
     text-align: center; }
-    footer .footer-navigation li {
+    footer.site-footer .footer-navigation li {
       display: inline-block;
       margin: 0px 15px; }
-      footer .footer-navigation li a {
+      footer.site-footer .footer-navigation li a {
         color: #F9F7E8;
         text-transform: uppercase;
         letter-spacing: 2px; }
@@ -538,6 +556,25 @@ footer {
     max-width: 100vw;
     margin-left: calc(-50vw + (50% - 8px));
     margin-right: calc(-50vw + (50% - 8px)); }
+
+nav.post-navigation {
+  display: none; }
+
+.entry-meta .posted-on {
+  text-align: center;
+  margin-bottom: 15px; }
+  .entry-meta .posted-on:before {
+    content: "";
+    width: 15px;
+    height: 15px;
+    position: relative;
+    left: -7px;
+    top: 2px;
+    background: url("img/time.svg");
+    background-size: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: inline-block; }
 
 #instagram {
   width: 100%;

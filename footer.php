@@ -11,7 +11,7 @@
 
 ?>
 
-<footer>
+<footer class="site-footer">
 <svg class="slant white" xmlns="http://www.w3.org/2000/svg" version="1.1" width="100%" height="100" viewBox="0 0 100 102" preserveAspectRatio="none">
 	<path d="M0 0 L100 100 L100 0 Z"></path>
 </svg>

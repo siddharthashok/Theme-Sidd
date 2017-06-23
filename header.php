@@ -69,6 +69,11 @@
               </a>
             </div>
             <div class="float-right">
+              <div class="site-search-link">
+                <img src="<?php echo get_template_directory_uri(); ?>/img/search.svg" alt="">
+              </div>
+            </div>
+            <div class="float-right">
               <nav id="site-navigation" class="main-navigation" role="navigation">
                 <?php wp_nav_menu( array( 'theme_location' => 'menu-1', 'menu_id' => 'primary-menu' ) ); ?>
               </nav><!-- #site-navigation -->

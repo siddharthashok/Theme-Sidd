@@ -55,7 +55,7 @@ get_header();
 	</div>
 
 	<div class="row">
-		<div class="columns large-3 large-offset-9">
+		<div class="columns large-12">
 			<?php the_posts_navigation(); ?>
 		</div>
 	</div>
