@@ -48,7 +48,7 @@
 	<div class="columns medium-8 medium-centered center">
 		<div class="about-the-site">
 			<p>This site is powered by WordPress, uses custom theme build on Foundation framework.</p>
-			<p>The content of this site is licensed under <a href="http://creativecommons.org/licenses/by-sa/4.0/" target="_blank">Creative Commons Attribution-ShareAlike 4.0 International License</a>. Supporting humanity with "<a href="http://freedomdefined.org/Definition" target="_blank">Free Cultural Works</a>".</p>
+			<p>The content of this site by Siddharth Ashok, is licensed under <a href="http://creativecommons.org/licenses/by-sa/4.0/" target="_blank">Creative Commons Attribution-ShareAlike 4.0 International License</a>. Supporting humanity with "<a href="http://freedomdefined.org/Definition" target="_blank">Free Cultural Works</a>".</p>
 		</div>
 
 		<!-- <p>Feel free to mail me <a href="">hello@sidd.in</a></p> -->
