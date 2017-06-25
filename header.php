@@ -14,7 +14,7 @@
 <head>
 <meta charset="<?php bloginfo( 'charset' ); ?>">
 <meta http-equiv="x-ua-compatible" content="ie=edge">
-<meta name="theme-color" content="#384D9D">
+<meta name="theme-color" content="#F9F7E8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 
 <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/css/foundation.min.css">
@@ -41,6 +41,7 @@
   					<img src="<?php echo get_template_directory_uri(); ?>/img/sidd.jpg" alt="Siddharth Ashok"/>
   					<div class="overlay"></div>
   				</div>
+          <div class="show-for-small-only" id="mobile-header"></div>
 
   				<h1 class="sidd"><span>Siddharth Ashok</span></h1>
   			</div>

@@ -87,5 +87,20 @@ $(document).ready(function(){
   //   window.history.pushState('post', siteTitle, siteUrl);
   // });
 
+// Mobile image tile
+
+window.ondevicemotion = function(event) {
+
+	accX = Math.round(event.accelerationIncludingGravity.x) / 10;
+	accY = Math.round(event.accelerationIncludingGravity.y) / 10;
+
+	movement = 100;
+
+	xA = -((accX * movement) + 100);
+	yA = -(accY) * movement;
+
+$('#mobile-header').css({'background-position' : xA+'px center'});
+
+}
 
 });

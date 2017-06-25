@@ -666,11 +666,11 @@ nav.post-navigation {
     color: transparent;
     background-color: #F2F2F2; }
   #instagram .owl-carousel .owl-controls .owl-nav .owl-prev {
-    background-image: url("../img/arrow-left.svg");
+    background-image: url("img/arrow-left.svg");
     float: left;
     background-position: left 30px center; }
   #instagram .owl-carousel .owl-controls .owl-nav .owl-next {
-    background-image: url("../img/arrow-right.svg");
+    background-image: url("img/arrow-right.svg");
     float: right;
     background-position: right 30px center; }
 
@@ -696,10 +696,27 @@ nav.post-navigation {
     padding: 0px 20px 0px 5px; } }
 
 @media screen and (max-width: 39.9375em) {
+  .image-logo-wrap {
+    display: none; }
+  #mobile-header {
+    width: calc(100% + 30px);
+    height: 400px;
+    margin-left: -15px;
+    margin-right: -15px;
+    margin-bottom: 15px;
+    background-image: url("img/sidd.jpg");
+    background-repeat: no-repeat;
+    -moz-transition: background 1s ease;
+    -o-transition: background 1s ease;
+    -webkit-transition: background 1s ease;
+    transition: background 1s ease; }
   #about {
-    padding-top: 30px; }
-  .sidd {
-    margin-bottom: 60px; }
+    padding-top: 0px; }
+    #about .sidd {
+      margin-bottom: 60px;
+      font-size: 48px;
+      line-height: 68px;
+      max-width: 300px; }
   p {
     font-size: 18px;
     letter-spacing: 0.2px;
