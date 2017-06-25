@@ -706,10 +706,10 @@ nav.post-navigation {
     margin-bottom: 15px;
     background-image: url("img/sidd.jpg");
     background-repeat: no-repeat;
-    -moz-transition: background 1s ease;
-    -o-transition: background 1s ease;
-    -webkit-transition: background 1s ease;
-    transition: background 1s ease; }
+    -moz-transition: background 0.5s ease;
+    -o-transition: background 0.5s ease;
+    -webkit-transition: background 0.5s ease;
+    transition: background 0.5s ease; }
   #about {
     padding-top: 0px; }
     #about .sidd {

@@ -377,7 +377,7 @@ nav.post-navigation {display: none;}
 
 @media screen and (max-width: 39.9375em) {
   .image-logo-wrap {display: none;}
-  #mobile-header {width:calc(100% + 30px); height:400px; margin-left: -15px; margin-right: -15px; margin-bottom: 15px; background-image: url("img/sidd.jpg"); background-repeat: no-repeat; @include transition( background 1s ease); }
+  #mobile-header {width:calc(100% + 30px); height:400px; margin-left: -15px; margin-right: -15px; margin-bottom: 15px; background-image: url("img/sidd.jpg"); background-repeat: no-repeat; @include transition( background 0.5s ease); }
   #about {padding-top: 0px;
     .sidd { margin-bottom: 60px; font-size: 48px; line-height: 68px; max-width: 300px;}
   }
