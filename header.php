@@ -85,3 +85,7 @@
 
 
   <?php } ?>
+
+  <style media="screen">
+    #blog, footer.site-footer {display: none;}
+  </style>
