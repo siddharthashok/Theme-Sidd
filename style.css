@@ -262,12 +262,14 @@ header.site-header {
   header.site-header .logo-home-link-wrap:hover .image-logo-wrap:before {
     left: -7.5px;
     top: 7.5px; }
-  header.site-header .site-search-link {
+  header.site-header .site-search-link-wrap {
     padding: 33px 0px 10px 10px;
     cursor: pointer; }
-    header.site-header .site-search-link img {
+    header.site-header .site-search-link-wrap img {
       width: 20px;
       height: 20px; }
+    header.site-header .site-search-link-wrap .search-model {
+      display: none; }
 
 .menu > li > a {
   border-bottom: 2px solid transparent;
@@ -296,12 +298,19 @@ header.site-header {
     -webkit-transition: all 0.5s ease;
     transition: all 0.5s ease; }
   #blog .posts-wrap .post.gallery {
+    height: 300px;
     background-size: cover;
     background-position: center;
     position: relative;
     z-index: 1;
     border: 0px;
-    padding: 150px 20px 20px; }
+    padding: 20px;
+    -webkit-filter: grayscale(100%);
+    filter: gray;
+    -moz-transition: all 1.4s ease;
+    -o-transition: all 1.4s ease;
+    -webkit-transition: all 1.4s ease;
+    transition: all 1.4s ease; }
     #blog .posts-wrap .post.gallery:after {
       content: "";
       position: absolute;
@@ -320,29 +329,29 @@ header.site-header {
       left: 0;
       bottom: 0;
       z-index: -1; }
+    #blog .posts-wrap .post.gallery h3, #blog .posts-wrap .post.gallery p {
+      color: #F9F7E8; }
+    #blog .posts-wrap .post.gallery:after {
+      height: 70%;
+      background: -moz-linear-gradient(top, transparent 0%, rgba(0, 0, 0, 0.65) 100%);
+      /* FF3.6-15 */
+      background: -webkit-linear-gradient(top, transparent 0%, rgba(0, 0, 0, 0.65) 100%);
+      /* Chrome10-25,Safari5.1-6 */
+      background: linear-gradient(to bottom, transparent 0%, rgba(0, 0, 0, 0.65) 100%);
+      /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+      filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00000000', endColorstr='#a6000000',GradientType=0 );
+      /* IE6-9 */ }
     #blog .posts-wrap .post.gallery:hover {
-      -webkit-filter: grayscale(100%);
-      filter: gray;
-      -moz-transition: all 1.4s ease;
-      -o-transition: all 1.4s ease;
-      -webkit-transition: all 1.4s ease;
-      transition: all 1.4s ease; }
-      #blog .posts-wrap .post.gallery:hover h3, #blog .posts-wrap .post.gallery:hover p {
-        color: #F9F7E8;
-        -moz-transition: all 0.3s ease;
-        -o-transition: all 0.3s ease;
-        -webkit-transition: all 0.3s ease;
-        transition: all 0.3s ease; }
-      #blog .posts-wrap .post.gallery:hover:after {
-        height: 60%;
-        background: -moz-linear-gradient(top, transparent 0%, rgba(0, 0, 0, 0.65) 100%);
-        /* FF3.6-15 */
-        background: -webkit-linear-gradient(top, transparent 0%, rgba(0, 0, 0, 0.65) 100%);
-        /* Chrome10-25,Safari5.1-6 */
-        background: linear-gradient(to bottom, transparent 0%, rgba(0, 0, 0, 0.65) 100%);
-        /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00000000', endColorstr='#a6000000',GradientType=0 );
-        /* IE6-9 */ }
+      -webkit-filter: none;
+      -moz-transition: all 0.5s ease;
+      -o-transition: all 0.5s ease;
+      -webkit-transition: all 0.5s ease;
+      transition: all 0.5s ease; }
+    #blog .posts-wrap .post.gallery .content-wrap {
+      position: absolute;
+      bottom: 0px;
+      left: 0px;
+      padding: 20px; }
 
 #blog .posts-wrap .column:last-child:not(:first-child), #blog .posts-wrap .columns:last-child:not(:first-child) {
   float: left; }

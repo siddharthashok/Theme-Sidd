@@ -39,9 +39,11 @@ get_header();
 							<div class="post<?php if(get_post_format() == 'gallery') {echo " gallery";}?>" <?php
 							$thumbnail = get_the_post_thumbnail_url();
 							if(get_post_format() == 'gallery' && $thumbnail) {?>style="background-image: url('<?php echo $thumbnail; ?>');"<?php } ?>>
-								<h3 class="post-title"><?php the_title(); ?></h3>
-								<div class="excerpt">
-									<p><?php the_excerpt(); ?></p>
+								<div class="content-wrap">
+									<div class="title-wrap"><h3 class="post-title"><?php the_title(); ?></h3></div>
+									<div class="excerpt">
+										<p><?php the_excerpt(); ?></p>
+									</div>
 								</div>
 							</div>
 						</a>

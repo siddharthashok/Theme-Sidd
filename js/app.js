@@ -103,4 +103,10 @@ $('#mobile-header').css({'background-position' : xA+'px center'});
 
 }
 
+// Site Search
+
+$(".site-search-link").click(function(event) {
+  $(".search-model").show();
+});
+
 });
